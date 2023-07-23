@@ -1,6 +1,6 @@
 # FastAPI project starter with tortoise orm
 
-## Database initialization with aerich
+## Database migration with aerich
 
 - Creating the migrations folder and pyproject.toml config file.
   ```sh
@@ -9,4 +9,12 @@
 - Initializing the database
   ```sh
   aerich init-db
+  ```
+- Migrate the database change
+  ```sh
+  aerich migrate
+  ```
+- Upgrade
+  ```sh
+  aerich upgrade
   ```
