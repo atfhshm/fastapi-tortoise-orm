@@ -1,1 +1,5 @@
-fastapi[all]
+fastapi
+pydantic_settings
+uvicorn
+tortoise-orm[asyncpg]
+aerich
