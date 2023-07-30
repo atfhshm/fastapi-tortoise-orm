@@ -1,4 +1,25 @@
 [tool.aerich]
-tortoise_orm = "db.config.DATABASE_CONFIG"
-location = "./migrations"
+tortoise_orm = "core.db.config.DATABASE_CONFIG"
+location = "./core/migrations"
 src_folder = "./."
+
+[tool.poetry]
+name = "fastapi-tortoise"
+version = "0.1.0"
+description = "A pre-configured project"
+authors = ["atfhshm <its.atfhshm@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "fastapi_tortoise"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.100.1"
+pydantic-settings = "^2.0.2"
+tortoise-orm = {extras = ["asyncpg"], version = "^0.19.3"}
+aerich = "^0.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
