@@ -1,9 +1,8 @@
-from settings import settings
-import os
+from server.settings import settings
 
 __all__ = ["create_db_connection"]
 
-DATABASE_URL = ""
+# DATABASE_URL = ""
 
 DATABASE_CONFIG = {
     "connections": {
@@ -11,8 +10,7 @@ DATABASE_CONFIG = {
     },
     "apps": {
         "models": {
-            "models": ["aerich.models"],
-            # "models": ["core.models"],
+            "models": ["aerich.models", "server.models"],
             "default_connection": "default",
         },
     },

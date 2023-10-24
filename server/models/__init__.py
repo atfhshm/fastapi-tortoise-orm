@@ -7,3 +7,7 @@ exmaple:
     from .users import User
     __all__ = ["User"]
 """
+
+from .users import User
+
+__all__ = ["User"]

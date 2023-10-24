@@ -1,5 +1,8 @@
 fastapi
+pydantic
 pydantic_settings
 uvicorn
+httpx
+pytest
 tortoise-orm[asyncpg]
 aerich

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
 
-from core.db import connect_to_db
+from server.db import connect_to_db
 
 app = FastAPI()
 
@@ -14,7 +14,7 @@ async def root():
 
 
 # to run the application using uvicorn
-# python -m core.main
+# python -m server.main
 
 # import uvicorn
 
